@@ -19,13 +19,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const handleNavClick = (href: string) => {
-    setMenuOpen(false)
-    const target = document.querySelector(href)
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <nav

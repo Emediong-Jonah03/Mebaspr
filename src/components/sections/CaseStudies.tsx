@@ -41,7 +41,7 @@ export default function CaseStudies() {
 
           {/* Secondary Articles */}
           <FadeInSection delay={2} className="flex flex-col gap-6 justify-between">
-            {secondary.map((article, i) => (
+            {secondary.map((article) => (
               <ArticleCard key={article._id} article={article} variant="compact" />
             ))}
           </FadeInSection>
