@@ -57,6 +57,7 @@ export interface Foundation {
   body: string
   stats: FoundationStat[]
   values: FoundationValue[]
+  brands: string[]
 }
 
 export interface FoundationValue {

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const navLinks: NavLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Our Services', href: '/services' },
   { label: 'Case Studies', href: '/blog' },
 ]
 
@@ -53,7 +53,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA + Search */}
+          {/* CTA */}
           <div className="flex items-center gap-3">
             <a
               href="#opportunities"
@@ -61,9 +61,7 @@ export default function Navbar() {
             >
               Apply Now
             </a>
-            <button className="p-2 hover:bg-neutral-gray transition-colors">
-              <span className="material-symbols-outlined text-deep-black">search</span>
-            </button>
+
             {/* Mobile menu toggle */}
             <button
               className="md:hidden p-2 hover:bg-neutral-gray transition-colors"

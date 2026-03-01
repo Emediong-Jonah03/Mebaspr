@@ -1,5 +1,5 @@
-import { fallbackFoundation } from '../data/fallback'
-import FadeInSection from '../components/ui/FadeInSection'
+import { fallbackFoundation } from '../../data/fallback'
+import FadeInSection from '../../components/ui/FadeInSection'
 
 export default function AboutFoundation() {
   const foundation = fallbackFoundation
@@ -33,6 +33,7 @@ export default function AboutFoundation() {
                     <h3 className="font-bold text-deep-black mb-1">{value.title}</h3>
                     <p className="text-slate-500 text-sm leading-relaxed">{value.description}</p>
                   </div>
+
                 </div>
               ))}
             </div>
@@ -45,12 +46,12 @@ export default function AboutFoundation() {
                 <div
                   key={stat.label}
                   className={`p-8 flex flex-col justify-center ${i === 0
-                      ? 'bg-primary text-white'
-                      : i === 1
-                        ? 'bg-deep-black text-white'
-                        : i === 2
-                          ? 'bg-neutral-gray text-deep-black'
-                          : 'bg-primary-dark text-white'
+                    ? 'bg-primary text-white'
+                    : i === 1
+                      ? 'bg-deep-black text-white'
+                      : i === 2
+                        ? 'bg-neutral-gray text-deep-black'
+                        : 'bg-primary-dark text-white'
                     }`}
                 >
                   <p className="text-4xl font-black mb-2">{stat.value}</p>

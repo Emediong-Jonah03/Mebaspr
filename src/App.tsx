@@ -1,9 +1,9 @@
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
-import LandingPage from './home/LandingPage'
-import About from './about/About'
-import Blog from './blog/Blog'
-import Services from './services/Services'
+import LandingPage from './pages/home/LandingPage'
+import About from './pages/about/About'
+import Blog from './pages/blog/Blog'
+import Services from './pages/services/Services'
 import { Routes, Route } from 'react-router-dom'
 import './styles/globals.css'
 

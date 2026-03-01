@@ -1,10 +1,10 @@
-import CaseStudies from "../components/sections/CaseStudies"
+import CaseStudies from "../../components/sections/CaseStudies"
 
 const Blog = () => {
     return (
-        <div>
+        <>
             <CaseStudies />
-        </div>
+        </>
     )
 }
 

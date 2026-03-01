@@ -1,4 +1,4 @@
-import { useFadeIn } from "../hooks/useFadeIn"
+import { useFadeIn } from "../../hooks/useFadeIn"
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -28,6 +28,7 @@ const services = [
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
         bgColor: 'bg-white',
         accentSide: 'left' as const,
+        brand: ['SyncedCancer Initiative'],
     },
     {
         id: 'corporate-events',
@@ -58,7 +59,65 @@ const services = [
         image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
         bgColor: 'bg-off-white',
         accentSide: 'right' as const,
+        brand: ['FemNest', 'CoWASH'],
     },
+    {
+        id: "digital-media-management",
+        eyebrow: '03 — Digital Media Management',
+        title: 'Digital Media Management',
+        tagline: 'Ensures your communications on social media.',
+        description:
+            "After the pandemic year, many businesses increased their reliance on the digital media to build their brand's perception, foster a positive reputation and stay top of mind. Our digital media management service ensures your communications on social media, website and email channels are consistent, up-to-date, clear and reflect your core values. What you get:",
+        accentIcon: 'chat_bubble',
+        offerings: [
+            'Online reputation management',
+            'Content strategy development',
+            'Brand storytelling',
+            'Social media management (ideation, creation, posting and engagement)',
+            'On-text search engine optimization',
+            'Analytics and performance tracking',
+        ],
+        outcomes: [
+            'Competitive edge with industry players in the digital media',
+            'Increased visibility & reach',
+            'Lead generation & conversion',
+            'Improved understanding of audience behaviour',
+        ],
+        image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+        bgColor: 'bg-white',
+        accentSide: 'left' as const,
+        brand: ['Amdari'],
+    },
+    {
+        id: "executive-communication",
+        eyebrow: '04 — Executive Communication',
+        title: 'Executive Communication',
+        tagline: 'Thought-leadership around your brand.',
+        description:
+            "Top global businesses are driven by the influence and perception of the business leaders and their personalities. We work with executive leaders to create thought-leadership around their personal brands and become a major influencer marketer for their brands. How we do this:",
+        accentIcon: 'communication',
+        offerings: [
+            'Brand strategy',
+            'Brand storytelling',
+            'Media relations and press outreach',
+            'Platform-specific management for executives',
+            'Crisis communication strategy development',
+        ],
+        outcomes: [
+            'Enhanced reputation and credibility of the executive company',
+            'Increased visibility and positive media coverage',
+            'Improved stakeholder trust and engagement',
+            'Effective crisis management and reputation management',
+            'Positioning as an industry thought-leader',
+            'Influenced business outcomes',
+        ],
+        image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+        bgColor: 'bg-off-white',
+        accentSide: 'right' as const,
+        href: 'https://thetobilobadorcas.com',
+        brand: ['Tobiloba Dorcas'],
+    },
+
 ]
 
 // ─── FadeIn Wrapper ──────────────────────────────────────────────────────────
@@ -174,6 +233,14 @@ function ServiceBlock({ service }: { service: typeof services[0] }) {
                                 <div className="border-l-2 border-neutral-gray pl-4">
                                     <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-1">Delivery</p>
                                     <p className="text-sm font-bold text-deep-black">End-to-End</p>
+                                </div>
+                                <div className="border-l-2 border-neutral-gray pl-4">
+                                    <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-1">Brands we have worked with</p>
+                                    <p className="text-sm font-bold text-deep-black">
+                                        <a href={service.href} className={`${service.href ? 'underline hover:underline-offset-4 text-primary' : ''}`} target="_blank" rel="noopener noreferrer">{service.brand.join(', ')}
+                                            {service.href && <span className="material-symbols-outlined text-primary ml-2">arrow_outward</span>}
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </AnimatedBlock>

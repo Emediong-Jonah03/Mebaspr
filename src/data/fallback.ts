@@ -150,9 +150,9 @@ export const fallbackFoundation: Foundation = {
   headline: 'Empowering the Next Generation of PR Leaders.',
   body: "PR Hub was established to bridge the gap between talented communications professionals and the world's most prestigious opportunities. We believe that transparency and access are the cornerstones of a thriving global media landscape.",
   stats: [
-    { value: '12k+', label: 'Active Professionals' },
-    { value: '450+', label: 'Partner Agencies' },
-    { value: '80+', label: 'Countries Reached' },
+    { value: '12+', label: 'Active Professionals' },
+    { value: '45+', label: 'Partner Agencies' },
+    { value: '8+', label: 'Countries Reached' },
     { value: '6yrs', label: 'Of Excellence' },
   ],
   values: [
@@ -169,4 +169,5 @@ export const fallbackFoundation: Foundation = {
         'We partner with agencies and institutions across 80 countries to provide wide international perspective.',
     },
   ],
+  brands: ["Amdari", "SyncedCancer Initiative", "Tobiloba Dorcas", "FemNest", "CoWash", "Stage Media Africa"]
 }

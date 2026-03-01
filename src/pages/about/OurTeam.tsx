@@ -1,9 +1,9 @@
-import { fallbackTeam } from '../data/fallback'
-import TeamCard from '../components/ui/TeamCard'
-import SectionHeader from '../components/ui/SectionHeader'
-import FadeInSection from '../components/ui/FadeInSection'
-import { useSanity } from '../hooks/useSanity'
-import type { TeamMember } from '../types'
+import { fallbackTeam } from '../../data/fallback'
+import TeamCard from '../../components/ui/TeamCard'
+import SectionHeader from '../../components/ui/SectionHeader'
+import FadeInSection from '../../components/ui/FadeInSection'
+import { useSanity } from '../../hooks/useSanity'
+import type { TeamMember } from '../../types'
 
 export default function OurTeam() {
   const { data, loading } = useSanity<TeamMember[]>(
